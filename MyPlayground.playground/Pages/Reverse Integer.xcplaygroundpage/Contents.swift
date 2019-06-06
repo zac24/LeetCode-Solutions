@@ -1,7 +1,19 @@
-//: [Previous](@previous)
+//7. Reverse Integer
 
-import Foundation
+let inputNum = 123
 
-var str = "Hello, playground"
 
-//: [Next](@next)
+func reverse(_ x: Int) -> Int {
+    var resultNum :Int = 0
+    var n = x
+    
+    while n>0 {
+        resultNum = resultNum*10 + n%10
+        n = n/10
+    }
+    
+    return resultNum
+}
+
+print(reverse(inputNum))
+
