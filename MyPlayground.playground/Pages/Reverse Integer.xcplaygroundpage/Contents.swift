@@ -1,6 +1,6 @@
 //7. Reverse Integer
 
-let inputNum = -51743
+let inputNum = -53214
 
 
 func reverse(_ x: Int) -> Int {
@@ -13,6 +13,7 @@ func reverse(_ x: Int) -> Int {
     }
     
     resultNum = x>=0 ? resultNum : -resultNum
+    resultNum = (resultNum > Int32.max || resultNum < Int32.min) ? 0 : resultNum
     return resultNum
 }
 
