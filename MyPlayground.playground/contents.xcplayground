@@ -3,5 +3,7 @@
     <pages>
         <page name='Reverse Integer'/>
         <page name='Two Sum'/>
+        <page name='Palindrome-number'/>
+        <page name='RomanToInteger'/>
     </pages>
 </playground>
