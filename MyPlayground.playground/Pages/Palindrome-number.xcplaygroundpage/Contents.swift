@@ -1,4 +1,4 @@
-let number = -121
+let number = 0
 
 func isPalindrome(_ x: Int) -> Bool {
     var resultNum : Int = 0
@@ -7,13 +7,8 @@ func isPalindrome(_ x: Int) -> Bool {
         resultNum = resultNum*10 + origNum%10
         origNum = origNum/10
     }
-    if resultNum == x {
-        return true
-    }else if(x < 0) {
-        return false
-    }else {
-        return false
-    }
+    
+    return resultNum == x
 }
 
 print(isPalindrome(number))
