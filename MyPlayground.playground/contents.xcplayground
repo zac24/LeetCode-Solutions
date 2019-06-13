@@ -5,5 +5,6 @@
         <page name='Two Sum'/>
         <page name='Palindrome-number'/>
         <page name='RomanToInteger'/>
+        <page name='Longest Prefix'/>
     </pages>
 </playground>

@@ -33,7 +33,7 @@ func romanToInt(_ s: String) -> Int {
     while i < characters.count - 1 {
         let val = romanToIntDict[characters[i]]
         let nextVal = romanToIntDict[characters[i+1]]
-        resultInt += (val! > nextVal!) ? val! : -val!
+        resultInt += (val! >= nextVal!) ? val! : -val!
         i += 1
     }
     
@@ -42,5 +42,5 @@ func romanToInt(_ s: String) -> Int {
     return resultInt
 }
 
-print(romanToInt("XCV"))
+print(romanToInt("LMV"))
 
