@@ -3,7 +3,9 @@ func longestCommonPrefix(_ strs: [String]) -> String {
     if strs.isEmpty {
         return resultString
     }
-    
+    if strs.count == 1 {
+        return strs[0]
+    }
     let sortedStringArray = strs.sorted()
     var firstString = Array(sortedStringArray.first!)
     var lastString = Array(sortedStringArray.last!)
@@ -22,7 +24,7 @@ func longestCommonPrefix(_ strs: [String]) -> String {
 
 //var stringArray : [String] = []
 
-var stringArray = ["flower","flow","flight"]
+var stringArray = ["flower"]//,"flow","flight"]
 
 print(longestCommonPrefix(stringArray))
 
