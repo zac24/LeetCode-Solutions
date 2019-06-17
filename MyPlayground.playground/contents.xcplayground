@@ -6,5 +6,6 @@
         <page name='Palindrome-number'/>
         <page name='RomanToInteger'/>
         <page name='Longest Prefix'/>
+        <page name='Add Strings'/>
     </pages>
 </playground>
